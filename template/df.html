@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Json Content</h2>
+
+{{data | safe}}
+<form method = "GET" action = "{{ url_for('home') }}" enctype="multipart/form-data">
+    <button type = "submit" class = "btn btn-default">Click here to go to home page</button>
+</form>
+{% endblock %}
+

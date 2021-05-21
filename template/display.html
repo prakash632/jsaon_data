@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Files uploaded</h2>
+{% for table in tables %}
+    {{ table|safe }}
+{% endfor %}
+{% endblock %}
+
